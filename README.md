@@ -13,3 +13,5 @@ On minu poolt mugandatud versioon, mis näeks lakoonilisem välja.
 Esotalk originaalprogramm
 ======
 http://esotalk.org
+
+https://github.com/esotalk/esoTalk
