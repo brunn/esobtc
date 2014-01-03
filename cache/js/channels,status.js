@@ -1,0 +1,3 @@
+
+var ETChannels={init:function(){$(".channelList li").each(function(){var item=$(this).find(".controls").first().popup({alignment:"right"});$(this).find(".channelControls").append(item);});$(".channelControls .button").tooltip();}};$(function(){ETChannels.init();});$(function(){if($("#conversationStatusControls").length)
+$("#conversationBody .scrubberContent").prepend($("#conversationStatusControls").popup({alignment:"left",content:"<i class='icon-pushpin'></i> <span class='text'>Staatused</span> <i class='icon-caret-down'></i>"}).find(".button").addClass("big").end());});
