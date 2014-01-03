@@ -284,9 +284,9 @@ public function init()
 
 			$this->addToMenu("user", "settings", "<a href='".URL("settings")."' class='link-settings'>".T("Settings")."</a>");
 
-			$this->addToMenu("user", "lingid", "<a href='".URL("http://brunn.ee/scuttle/")."' class='link-settings'>".T("Lingid")."</a>");
+			$this->addToMenu("user", "lingid", "<a href='".URL("http://www.delicious.com")."' class='link-settings'>".T("Lingid")."</a>");
 
-			$this->addToMenu("user", "irckanal", "<a href='".URL("http://webchat.quakenet.org/?channels=bitikas&nick=").name(ET::$session->user["username"])."' class='link-settings'>".'#'.name(ET::$session->user["username"])."</a>");
+			$this->addToMenu("user", "irckanal", "<a href='".URL("http://webchat.quakenet.org/?channels=channel&nick=").name(ET::$session->user["username"])."' class='link-settings'>".'#'.name(ET::$session->user["username"])."</a>");
 
 			if (ET::$session->isAdmin())
 			$this->addToMenu("user", "administration", "<a href='".URL("admin")."' class='link-administration'>".T("Administration")."</a>");
