@@ -19,16 +19,12 @@ class ETController extends ETPluggable {
  * @var string
  */
 public $masterView = "default.master";
-
-
 /**
  * An array of data that will be passed to the view as a local variable when the page is rendered. This
  * should be used as the primary transport of data between a controller and a view.
  * @var array
  */
 public $data = array();
-
-
 /**
  * The title of the page. The default master view will use this in the <title> tag.
  * @var string
