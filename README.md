@@ -1,7 +1,7 @@
 esobtc
 ======
 
-  [image]: https://www.brunn.ee/bitikas.png
+  [image]: http://www.brunn.ee/bitikas.png
   
 On minu poolt mugandatud versioon, mis näeks lakoonilisem välja.
 + Eemaldatud on registreerimata kasutajatele näidatavad lingid ning nupud.
