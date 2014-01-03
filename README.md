@@ -9,4 +9,6 @@ On minu poolt mugandatud versioon, mis näeks lakoonilisem välja.
 + Plugina Ootel klopsisin ise kokku,et ka teistel oleks mida edasi arendada.
 + Otsingu menüü on puhastatud minu jaoks üleliigsest.
 + Avatarid on eemaldatud.
-
+Esotalk originaal
+======
+(http://esotalk.org)
