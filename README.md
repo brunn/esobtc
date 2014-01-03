@@ -1,6 +1,6 @@
 esobtc
 ======
- ![image][]
+
   [image]: https://www.brunn.ee/bitikas.png
   
 On minu poolt mugandatud versioon, mis näeks lakoonilisem välja.
