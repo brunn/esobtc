@@ -1182,6 +1182,12 @@ $conversation = ET::conversationModel()->getByPostId($postId);
 		->where("conversationid",$conversation["conversationId"])
 		->exec();
 
+	ET::SQL()
+		->update("member_conversation")
+		->set("lastRead", "lastRead - 1", false)
+		->where("conversationId",$conversation["conversationId"])
+		->exec();
+
 	if (!($post = $this->getPostForEditing($postId)) or !$this->validateToken()) return;
 	ET::postModel()->deleteById($postId);
 
