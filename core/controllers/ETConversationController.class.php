@@ -1176,17 +1176,28 @@ public function deletePost($postId = false)
 {
 /*siin teha kontroll kui countPosts = 1 siis rohkem ei kustutata*/
 $conversation = ET::conversationModel()->getByPostId($postId);
-	ET::SQL()
-		->update("conversation")
-		->set("countPosts", "countPosts - 1", false)
+
+	$postitusi = ET::SQL()
+		->select("countPosts")
+		->from("conversation")
 		->where("conversationid",$conversation["conversationId"])
 		->exec();
 
-	ET::SQL()
-		->update("member_conversation")
-		->set("lastRead", "lastRead - 1", false)
-		->where("conversationId",$conversation["conversationId"])
-		->exec();
+	if( $postitusi > 1){
+		ET::SQL()
+			->update("conversation")
+			->set("countPosts", "countPosts - 1", false)
+			->where("conversationid",$conversation["conversationId"])
+			->exec();
+
+		ET::SQL()
+			->update("member_conversation")
+			->set("lastRead", "lastRead - 1", false)
+			->where("conversationId",$conversation["conversationId"])
+			->exec();
+	}
+
+
 
 	if (!($post = $this->getPostForEditing($postId)) or !$this->validateToken()) return;
 	ET::postModel()->deleteById($postId);
