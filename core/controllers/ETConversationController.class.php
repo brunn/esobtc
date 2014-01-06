@@ -1174,6 +1174,7 @@ public function editPost($postId = false)
  */
 public function deletePost($postId = false)
 {
+/*siin teha kontroll kui countPosts = 1 siis rohkem ei kustutata*/
 $conversation = ET::conversationModel()->getByPostId($postId);
 	ET::SQL()
 		->update("conversation")
