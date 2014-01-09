@@ -62,14 +62,14 @@ if (ET::$session->user and $conversation["unread"])
 
 ?></div>
 <div class='col-lastPost'><?php
-echo "<span class='action'>".avatar(array(
-		"memberId" => $conversation["lastPostMemberId"],
-		"avatarFormat" => $conversation["lastPostMemberAvatarFormat"],
-		"email" => $conversation["lastPostMemberEmail"]
-	), "thumb"), " ",
+echo "<span class='action'>".#avatar(array("memberId" => $conversation["lastPostMemberId"],"avatarFormat" => $conversation["lastPostMemberAvatarFormat"],"email" => $conversation["lastPostMemberEmail"]), "thumb"), " ",
 	sprintf(T("%s posted %s"),
 		"<span class='lastPostMember name'>".memberLink($conversation["lastPostMemberId"], $conversation["lastPostMember"])."</span>",
 		"<a href='".URL($conversationURL."/unread")."' class='lastPostTime'>".relativeTime($conversation["lastPostTime"], true)."</a>"),
 	"</span>";
-?></div>
+?>
+</div>
 </li>
+
+
+
