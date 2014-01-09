@@ -295,7 +295,20 @@ margin:30px auto;
 .tabs .pathEnd.selected a:last-child:before, .tabs .pathEnd.selected a:last-child:after {display:none}
 
 /* Channels */
-.channel {background:#fff; text-decoration:none; color:#666 !important; text-shadow:none; border-radius:3px; font-size:85%; border:1px solid #ddd; white-space:nowrap; box-shadow:0 1px 0 rgba(0, 0, 0, 0.04); padding:2px 5px}
+.channel {
+/*background:#fff;
+ text-decoration:none;
+*/
+ color:#666 !important;
+/* text-shadow:none;
+ border-radius:3px;
+ font-size:85%;
+ border:1px solid #ddd;
+ white-space:nowrap;
+ box-shadow:0 1px 0 rgba(0, 0, 0, 0.04);
+*/
+ padding:2px 5px;
+}
 a.channel:hover {text-decoration:none; border-color:#aaa}
 
 
@@ -401,7 +414,11 @@ negative margins so they overlap the padding of the <li>. */
 .conversationList .col-conversation {width:95%; display:inline-block}
 .conversationList .col-star {float:left; width:1em; margin-left:-13em; padding-left:0.5em}
 .conversationList .col-channel {float:left; width:10em; margin-left:-11em; text-align:right}
-.conversationList .col-replies {float:right; margin-right:-14em; width:14em}
+.conversationList .col-replies {
+float:right;
+ margin-right:-14em;
+ width:14em;/*originaal 14em*/
+}
 .conversationList .col-lastPost {float:right; width:20em; margin-right:-34em; font-size:85%; overflow:hidden; white-space:nowrap}
 .list .col-replies {color:#888; font-size:85%}
 .list .col-replies i {font-size:14px; color:#ddd; margin-right:5px}
