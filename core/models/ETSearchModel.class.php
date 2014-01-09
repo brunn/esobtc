@@ -878,7 +878,7 @@ public static function gambitLocked(&$search, $term, $negate)
 }
 
 // Add default gambits.
-#ETSearchModel::addGambit('return $term == strtolower(T("gambit.starred"));', array("ETSearchModel", "gambitStarred"));
+ETSearchModel::addGambit('return $term == strtolower(T("gambit.starred"));', array("ETSearchModel", "gambitStarred"));
 ETSearchModel::addGambit('return $term == strtolower(T("gambit.muted"));', array("ETSearchModel", "gambitMuted"));
 #ETSearchModel::addGambit('return $term == strtolower(T("gambit.draft"));', array("ETSearchModel", "gambitDraft"));
 ETSearchModel::addGambit('return $term == strtolower(T("gambit.private"));', array("ETSearchModel", "gambitPrivate"));
