@@ -1183,7 +1183,8 @@ $conversation = ET::conversationModel()->getByPostId($postId);
 		->where("conversationid",$conversation["conversationId"])
 		->exec();
 
-	if( $postitusi > 1){
+
+	#if($postitusi > 1){
 		ET::SQL()
 			->update("conversation")
 			->set("countPosts", "countPosts - 1", false)
@@ -1195,7 +1196,7 @@ $conversation = ET::conversationModel()->getByPostId($postId);
 			->set("lastRead", "lastRead - 1", false)
 			->where("conversationId",$conversation["conversationId"])
 			->exec();
-	}
+	#}
 
 
 

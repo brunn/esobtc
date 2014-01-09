@@ -69,7 +69,11 @@ if (!defined("IN_ESOTALK")) exit;
 <ul class='menu'>
 <li id='goToTop'><a href='#'><?php #echo T("Go to top"); ?></a></li>
 <?php echo $data["metaMenuItems"]; ?>
-<?php #if (!empty($data["statisticsMenuItems"])) echo $data["statisticsMenuItems"]; ?>
+<?php
+ #if (!empty($data["statisticsMenuItems"])) echo $data["statisticsMenuItems"];
+ ?>
+<li id='goToTop'><a href='http://webchat.quakenet.org/?channels=bitikas&nick=Kylaline'>#irc</a></li>
+
 </ul>
 </div>
 </div>
