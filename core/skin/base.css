@@ -253,7 +253,13 @@ margin:30px auto;
 
 
 /* Generic lists */
-.list {margin:0; border-bottom:1px solid #e1e1e1; line-height:1.5em; padding:0; list-style-type:none}
+.list {
+margin:0;
+ border-bottom:1px solid #fff;
+ line-height:1.5em;
+ padding:0;
+ list-style-type:none;
+}
 .list > li {
 /* border:solid #e1e1e1;*/
 /* border:1px solid #e1e1e1;*/
