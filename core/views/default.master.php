@@ -72,7 +72,12 @@ if (!defined("IN_ESOTALK")) exit;
 <?php
  #if (!empty($data["statisticsMenuItems"])) echo $data["statisticsMenuItems"];
  ?>
-<li id='goToTop'><a href='http://webchat.quakenet.org/?channels=bitikas&nick=Kylaline'>#irc</a></li>
+<li id='goToTop'><a href='http://webchat.quakenet.org/?channels=bitikas&nick=Kylaline<?PHP echo rand(5, 15);?>'>#irc</a></li>
+<li id='goToTop'><a href='https://addons.mozilla.org/en-US/firefox/addon/chatzilla/'>#chatzilla</a></li>
+<li id='goToTop'><a href='http://brunn.ee/scuttle/'>lingid</a></li>
+
+
+
 
 </ul>
 </div>
